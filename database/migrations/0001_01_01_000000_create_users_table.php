@@ -1,10 +1,12 @@
+
 <?php
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-return new class extends Migration {
+return new class extends Migration
+{
     /**
      * Run the migrations.
      */
@@ -15,14 +17,10 @@ return new class extends Migration {
             $table->string('nama');
             $table->string('alamat')->nullable();
             $table->string('id_poli')->nullable()->constrained('poli')->cascadeOnDelete();
-            $table->string('no_ktp')->nullable();
-            $table->string('no_hp')->nullable();
-            $table->string('no_rm', 25)->nullable();
-<<<<<<< HEAD
-            $table->enum('role', ['pasien', 'dokter', 'admin']);
-=======
-            $table->enum('role', ['pasien', 'daftar', 'admin']);
->>>>>>> 5e23741374a388097796c292c3bf4ccd7c29fab6
+            $table ->string('no_ktp')->nullable();
+            $table ->string('no_hp')->nullable();
+            $table ->string('no_rm' , 25)->nullable();
+            $table->enum('role', ['pasien', 'dokter' , 'admin']);
             $table->string('email')->unique();
             $table->string('password');
             $table->rememberToken();
