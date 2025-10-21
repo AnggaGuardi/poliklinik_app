@@ -1,4 +1,3 @@
-
 <x-layouts.guest title="Register">
     <div class="login-box d-flex flex-column justify-content-center align-items-center w-100 vh-100">
         {{-- login-logo --}}
