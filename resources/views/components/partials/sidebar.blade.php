@@ -48,7 +48,7 @@
                     </li>
                     <li class="nav-item">
                         <a href="{{ route('pasien.index') }}" class="nav-link {{ request()->routeIs('pasien.*') ? 'active' : '' }}">
-                            <i class="nav-icon fa-user-md"></i>
+                            <i class="nav-icon fa-user-injured"></i>
                             <p>
                                 Manajemen Pasien
                             </p>
@@ -56,7 +56,7 @@
                     </li>
                     <li class="nav-item">
                         <a href="{{ route('obat.index') }}" class="nav-link {{ request()->routeIs('obat.*') ? 'active' : '' }}">
-                            <i class="nav-icon fa-user-md"></i>
+                            <i class="nav-icon fa-user-injured"></i>
                             <p>
                                 Manajemen Obat
                             </p>
@@ -74,6 +74,14 @@
                             </p>
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a href="{{ route('pasien.daftar') }}" class="nav-link {{ request()->routeIs('pasien.daftar') ? 'active' : '' }}">
+                            <i class="nav-icon fas fa-hospital-user"></i>
+                            <p>
+                                Poli
+                            </p>
+                        </a>
+                    </li>
                 @endif
 
                 <!-- ROLE DOKTER -->
@@ -83,6 +91,14 @@
                             <i class="nav-icon fas fa-columns"></i>
                             <p>
                                 Dashboard Dokter
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ route('jadwal-periksa.index') }}" class="nav-link {{ request()->routeIs('jadwal-periksa.*') ? 'active' : '' }}">
+                            <i class="nav-icon fas fa-calendar-check"></i>
+                            <p>
+                                Jadwal Periksa
                             </p>
                         </a>
                     </li>
